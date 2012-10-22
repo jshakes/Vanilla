@@ -60,6 +60,28 @@ if ( function_exists('register_sidebar') ){
 }
 */
 
+/* ---- Scripts ---- */
+
+function enqueue_scripts(){
+    
+    wp_enqueue_script(
+        "plugins",
+        get_template_directory_uri()."/js/plugins.js",
+        null,
+        null,
+        true
+    ); 
+    wp_enqueue_script(
+        "scripts",
+        get_template_directory_uri()."/js/scripts.js",
+        null,
+        null,
+        true
+    );
+}
+
+add_action('init', 'enqueue_scripts');
+
 /* ---- Other ---- */
 
 //add excerpt field into pages
