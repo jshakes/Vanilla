@@ -31,7 +31,7 @@
 	<script src="<?php bloginfo('template_url'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 <div class="container" id="body-container">
 
