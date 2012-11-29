@@ -2,17 +2,13 @@
 get_header();
 if ( have_posts() ) : the_post(); 
 ?>
-<div class="wrapper clearfix">
+<div class="container clearfix">
   
   <h1><?php the_title(); ?></h1>
   
-  <div class="container clearfix">
-  
-    <section class="s1">
+  <div class="wrapper clearfix">
     
       <?php the_content(); ?>
-      
-    </section>
     
   </div>
   

@@ -62,7 +62,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 body{
   font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   background: #fff;
   color: #000;
 }
@@ -70,40 +70,31 @@ body{
 p{  line-height: 1.6em; margin: 0 0 10px 0;  }
 a, a:visited{   color: #000; text-decoration: underline; }
 
-/* selection colours */
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
-
 /* headings */
 
 h1, h2, h3, h4, h5{  font-weight: normal; margin: 0; color: #2b002d; }
-h2{ font-size: 2em;   }
+h1{ font-size: 2em;   }
+h2{ font-size: 1.6em; }
 h3{ font-size: 1.4em; }
-h4{ font-size: 1.4em; }
-
-/* lists */
-
-ul{  list-style-image: url('img/li_bg.png'); margin: 0 0 15px 0; padding: 0 0 0 20px;  }
+h4{ font-size: 1.2em; }
+h5{ font-size: 1em;   }
 
 /* -------------------- WIDTHS -------------------- */
 
-header, section.s1, .wrapper, footer, #body-wrapper{  width: 940px; clear: both; margin: 0 auto;  }
+header, section.s1, .container, footer, #body-wrapper{  width: 940px; clear: both; margin: 0 auto;  }
 section.s2{  width: 460px; }
 section.s3{  width: 300px;}
 section.s4{  width: 220px;} 
 
 /* -------------------- LAYOUT -------------------- */
 
+.wrapper{  width: 100%; clear: both; }
 section{   float: left; margin: 0 0 0 20px; }
 section:first-child{ margin-left: 0;  }
-.container, article{  width: 100%; clear: both; }
-.wrapper{  margin: 0 auto; clear: both; }
 
 #body-container{  background: #fff; padding: 0 0 10px 0;  }
 
 /* header */
-
-header h1.ir{   width: 100px; height: 100px; background: url('img/header_logo.png') no-repeat 0 0; float: left; }
 
 header nav li.current_page_item a, header nav li a:hover{    color: #f00;   }
 
@@ -130,7 +121,6 @@ a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000;
 
   header, section.s1, .wrapper, footer, #body-wrapper{  width: 748px; clear: both; margin: 0 auto;  }
   section.s2, section.s3, section.s4{  width: 364px; }
-  article{     width: 400px;  }
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
   
   img{   max-width: 100%; }
@@ -140,9 +130,9 @@ a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000;
 /* Mobile Landscape */
 @media all and (min-width: 480px) and (max-width: 748px) { 
     
-  header, section.s1, .wrapper, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 450px;} 
+  header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 450px;} 
   section{   margin: 0 !important; }
-  article, section{  margin-bottom: 20px !important; }
+  section{  margin-bottom: 20px !important; }
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
     
   img{   max-width: 100%; }
@@ -152,14 +142,22 @@ a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000;
 /* Mobile Portrait */
 @media all and (min-width: 0px) and (max-width: 479px) { 
 
-  header, section.s1, .wrapper, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 300px;} 
+  header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 300px;} 
   section{   margin: 0 !important; }
-  article, section{  margin-bottom: 20px !important; }
+  section{  margin-bottom: 20px !important; }
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
   
   img{   max-width: 100%; }
   
 }
+
+/* -------------------- PSEUDO -------------------- */
+
+/* selection colours */
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
 
 /* =============================================================================
    Non-semantic helper classes
