@@ -7,17 +7,9 @@ get_header();
 
 if ( have_posts() ): 
 ?>
-<div class="wrapper clearfix">
-       
-  <div class="container clearfix">
-  
-    <section class="s1">
+<div class="container clearfix">
     
-      <?php get_template_part('loop', 'posts'); ?>
-      
-    </section>
-    
-  </div>
+    <?php get_template_part('loop', 'posts'); ?>
   
 </div>
 	
