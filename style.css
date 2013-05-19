@@ -55,14 +55,17 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* =============================================================================
    Primary styles
-   Author: Traffic Digital
+   Author: 
    ========================================================================== */
+
+/* -------------------- FONTS -------------------- */
+
 
 /* -------------------- ELEMENT DEFAULTS -------------------- */
 
 body{
   font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   background: #fff;
   color: #000;
 }
@@ -81,20 +84,16 @@ h2{ font-size: 2em;   }
 h3{ font-size: 1.4em; }
 h4{ font-size: 1.4em; }
 
-/* lists */
-
-ul{  list-style-image: url('img/li_bg.png'); margin: 0 0 15px 0; padding: 0 0 0 20px;  }
-
 /* -------------------- WIDTHS -------------------- */
 
-header, section.s1, .wrapper, footer, #body-wrapper{  width: 940px; clear: both; margin: 0 auto;  }
+header, section.s1, .wrapper, footer, #body-wrapper{  width: 960px; clear: both; margin: 0 auto;  }
 section.s2{  width: 460px; }
 section.s3{  width: 300px;}
 section.s4{  width: 220px;} 
 
 /* -------------------- LAYOUT -------------------- */
 
-section{   float: left; margin: 0 0 0 20px; }
+section{   float: left; margin: 0 0 0 30px; }
 section:first-child{ margin-left: 0;  }
 .container, article{  width: 100%; clear: both; }
 .wrapper{  margin: 0 auto; clear: both; }
@@ -112,6 +111,7 @@ header nav li.current_page_item a, header nav li a:hover{    color: #f00;   }
 .left{   float: left; }
 .right{   float: right; }
 .clear{    clear: both; }
+.center{   text-align: center; }
 
 /* typo */
 

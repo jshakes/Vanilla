@@ -60,6 +60,45 @@ if ( function_exists('register_sidebar') ){
 }
 */
 
+/* ---- Scripts ---- */
+
+/* Scripts */
+
+function enqueue_scripts(){
+    
+    wp_enqueue_script(
+        "modernizr",
+        get_template_directory_uri()."/js/libs/modernizr.min.js",
+        null,
+        null,
+        false
+    );
+    wp_enqueue_script(
+        "jquery",
+        get_template_directory_uri()."/js/libs/jquery-1.9.1.min.js", //(fallback)
+        null,
+        null,
+        true
+    );
+    wp_enqueue_script(
+        "plugins",
+        get_template_directory_uri()."/js/plugins.js",
+        null,
+        null,
+        true
+    ); 
+    wp_enqueue_script(
+        "scripts",
+        get_template_directory_uri()."/js/scripts.js",
+        null,
+        null,
+        true
+    );
+}
+
+
+add_action('init', 'enqueue_scripts');
+
 /* ---- Other ---- */
 
 //add excerpt field into pages
