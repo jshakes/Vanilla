@@ -23,8 +23,8 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />			
-	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico">
-	<link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/img/apple-touch-icon.png">
+	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico">
+	<link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/images/apple-touch-icon.png">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('title'); ?> RSS Feed" href="/feed/" />
     
@@ -35,7 +35,7 @@
     <div class="container" id="body-container">
 
         <header class="clearfix">
-            <a id="header-logo" title="<?php bloginfo('title'); ?>" href="/"><img src="<?php bloginfo('template_url'); ?>/img/header_logo.png" alt="<?php bloginfo('title'); ?>" /></a>
+            <a id="header-logo" title="<?php bloginfo('title'); ?>" href="/"><img src="<?php bloginfo('template_url'); ?>/images/header_logo.png" alt="<?php bloginfo('title'); ?>" /></a>
             <h2 class="strap"><?php bloginfo('description'); ?></h2>
             <nav>
                 <!-- Main page nav -->

@@ -60,9 +60,19 @@ if ( function_exists('register_sidebar') ){
 }
 */
 
+
+/* ---- Styles ---- */
+
+function enqueue_styles(){
+
+  
+  wp_enqueue_style('main', get_bloginfo('template_url') . '/css/main.css');
+}
+
+add_action('init', 'enqueue_styles');
+
 /* ---- Scripts ---- */
 
-/* Scripts */
 
 function enqueue_scripts(){
     
